@@ -31,10 +31,6 @@ class TestDemo(unittest.TestCase):
         print("结束执行")
 
     def test_01(self):
-        '''第一个测试用例'''
-        print("正在执行第一个用例")
-        # self.driver.find_element_by_id("kw").send_keys("浪晋的测试小讲堂")
-        # self.driver.find_element_by_id("su").click
         # time.sleep(5)
         self.assertEqual(1,3,"判断是否相等")
 
