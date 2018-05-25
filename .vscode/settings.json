@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "F:\\python\\instell\\python.exe"
+    "python.pythonPath": "F:\\python\\instell\\python.exe",
+    "python.formatting.provider": "yapf"
 }

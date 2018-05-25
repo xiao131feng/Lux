@@ -2,12 +2,14 @@ import unittest
 from utils.pyselenium import Pyselenium
 from utils import webconfig
 import time
-@classmethod
-def setUpclass(cls):
-    driver = Pyselenium(webconfig.browser) #在pyselenium类中调用webconfig的browser值并赋值给driver
-    driver.openurl("https://www.baidu.com") #调用openurl函数
-    time.sleep(5)
-    print("开始测试！")
+
+class Test_03(unittest.TestCase):
+    @classmethod
+    def setUpclass(cls):
+        driver = Pyselenium(webconfig.browser) #在pyselenium类中调用webconfig的browser值并赋值给driver
+        driver.openurl("https://www.baidu.com") #调用openurl函数
+        time.sleep(5)
+        print("开始测试！")
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
