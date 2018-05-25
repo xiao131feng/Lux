@@ -52,21 +52,3 @@ class TestDemo(unittest.TestCase):
         # time.sleep(5)
         self.assertEqual(1,2,"判断是否相等")
         
-
-
-if __name__ == '__main__':
-    # unittest.main()
-    suite = unittest.TestSuite()
-    # suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestDemo))
-
-    tests = [TestDemo("test_01"), TestDemo("test_02"),TestDemo("test_03")]
-    suite.addTests(tests)
-    # suite = unittest.defaultTestLoader.discover(start_dir='.', pattern='test*.py')
-    # with open('UnittestTextReport.txt', 'w') as h:
-    #     runner = unittest.TextTestRunner(stream=h, verbosity=2)
-    #     runner.run(suite)
-
-    with open('HTMLReport.html', 'wb+') as f:
-        runner = HTMLTestRunner.HTMLTestRunner(
-            stream=f, title='测试报告', description='执行人：浪晋', verbosity=2)
-        runner.run(suite)
