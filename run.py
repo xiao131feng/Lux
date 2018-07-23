@@ -4,7 +4,7 @@ suite = unittest.TestSuite()  #构建测试用例集
 # tests=[TestDemo("test_01"),TestDemo("test_02"),TestDemo("test_03"),TestDemo("test_04")]
 #执行testcase中以test开头的用例
 suite = unittest.defaultTestLoader.discover(
-    start_dir='./testcase', pattern='test_login.py')
+    start_dir='./testcase', pattern='test_01.py')
 # suite.addTests(tests)
 # 生成测试报告
 with open('./reports/HTMLReport2.html', 'wb+') as f:
