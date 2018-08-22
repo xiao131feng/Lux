@@ -1,0 +1,21 @@
+
+""" 2018.08.20
+小练习：写一个注册接口
+
+1. 用户名为：cc
+2. 密码为：cc
+3. 昵称为：阿绿
+4. 用户名头像可以为空
+
+要求：
+1. 用户名和密码不能为空
+2. 如果昵称为空，默认指定串串为昵称
+3. 如果注册成功，返回注册成功信息
+4. 如果注册失败，返回失败的信息
+
+能用json返回的话最好，不会用就返回success和failed。
+
+json格式可以参照lux.itblacklist.top来做
+json格式实现可以参考官方文档：http://docs.jinkan.org/docs/flask/api.html#module-flask.json
+
+"""
