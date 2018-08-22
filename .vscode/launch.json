@@ -4,13 +4,11 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
         {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "none"
+            "program": "${file}"
         },
         {
             "name": "Python: Attach",
@@ -57,7 +55,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "${workspaceFolder}/app.py"
+                "FLASK_APP": "app.py"
             },
             "args": [
                 "run",
